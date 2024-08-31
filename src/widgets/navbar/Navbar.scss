@@ -1,0 +1,43 @@
+.navbar {
+    position: fixed;
+    top: -2px;
+    right: 0px;
+    left: 0px;
+    z-index: 888;
+    width: 100%;
+    background-color: transparent;
+    height: 56px;
+    overflow: hidden;
+
+    .navbar__container {
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        height: inherit;
+        max-width: var(--container-width);
+        margin: 0px auto;
+        padding: 0px 15px;
+    
+
+        .navbar__logo {
+            width: auto;
+            height: 36px;
+        }
+
+        .navbar__redirect-btn {
+            font-family: inter;
+            font-weight: 700;
+            font-size: 18px;
+            padding: 14px;
+            border-radius: 0px 0px 20px 20px;
+            transition: background 1s ease 0s;
+            display: inline-block;
+            text-align: center;
+            cursor: pointer;
+            background: var(--gradient-primary);
+            color: rgb(18, 20, 29) !important;
+        }
+    }
+}
